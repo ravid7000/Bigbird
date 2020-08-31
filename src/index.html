@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Bird</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script> -->
+</head>
+<body>
+  <div class="menu-bar">
+    <button class="menu-item">New</button>
+  </div>
+  <div class="toolbox">
+    <button class="tool" title="Pencil" id="toolPencil">
+      <i class="material-icons">edit</i>
+    </button>
+    <button class="tool" title="Highlighter" id="toolHighlighter">
+      <i class="material-icons">highlight</i>
+    </button>
+    <button class="tool" title="Eraser" id="toolEraser">
+      <i class="material-icons">stop</i>
+    </button>
+    <input type="color" name="color" id="toolColorPicker" class="tool color-picker" />
+  </div>
+  <div class="artboard-wrapper">
+    <canvas id="artBoard" width="100%"></canvas>
+  </div>
+  <div class="properties">
+    Mouse [ <span id="mouseX">0</span> ] [ <span id="mouseY">0</span> ]
+  </div>
+  <script src="utils.js"></script>
+  <script src="sketch.js"></script>
+  <script src="setup.js"></script>
+</body>
+</html>
