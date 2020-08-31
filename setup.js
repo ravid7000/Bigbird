@@ -14,7 +14,8 @@ function createApp() {
     mouse: {
       x: '#mouseX',
       y: '#mouseY',
-    }
+    },
+    new: '#newArtboard',
   };
 
   createSketch(config);

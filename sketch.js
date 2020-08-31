@@ -89,6 +89,12 @@ function initTools(toolConfig) {
   });
 }
 
+function initNew(el) {
+  select(el).addEventListener('click', () => {
+    location.reload();
+  });
+}
+
 function mousemove() {
   if (sketchConfig.canvas) {
     const x = mouseX - sketchConfig.canvas.offsetLeft;
@@ -247,5 +253,6 @@ function createSketch(config) {
     sketchConfig.windowHeight - 100
   );
   initTools(config.tools);
+  initNew(config.new);
   drawLoop();
 }
