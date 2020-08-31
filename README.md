@@ -6,3 +6,6 @@
 - Highlighter
 
 ### Open `index.html` file in browser to start project
+
+### See live demo
+[https://ravid7000.github.io/Bigbird/index.html]
